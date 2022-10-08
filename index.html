@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>First Meeting Notes</title>
+    <link rel="icon" href="media/robot.png">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <header>
+        <h1>The First Meeting</h1>
+        <p>Introductions</p>
+        <p>10/5/22</p>
+    </header>
+    <nav>
+        <a href="#video">To just watch the meeting</a>
+    </nav>
+    <main>
+      <section>
+        <h2>Attendance</h2>
+        <ul>
+            <li><span>Nathan</span></li> 
+            <li>Thomas</li>
+            <li>Alan</li>
+            <li>Nate</li>
+            <li>Tom</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Agenda</h3>
+        <p>This meeting is being held to <b>simply</b> <strong>introduce</strong> the <em>group</em> <i>members</i> and cover expectations for the project. 
+          <br>We hope to get off on the right foot.</p>
+        <h3>Unfinished Business</h3>
+        <ol>
+            <li>N/A</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>New Business</h3>
+        <ol>
+            <li>Breaking the ice</li>
+            <li>Learning project specifications</li>
+            <li>Brainstorming</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Data covered in this meeting</h3>
+        <img src="media/Vdiagram.png">
+        <img src="media/norm.PNG">
+      </section>
+
+        <hr>
+
+        <div id="video">
+          <video controls width="250">
+            <source src="/media/VIDEO.mp4" type="video/mp4">
+            <a href="/media/cc0-videos/flower.mp4">MP4</a>
+          </video>
+          </div>
+          <section>
+            <figure>
+              <figcaption>Listen to the Meeting</figcaption>
+              <audio
+                  controls
+                  src="/media/VIDEO.mp4">
+                  <a href="/media/VIDEO.mp4">
+                    Download audio
+                </a>
+              </audio>
+            </figure>
+          </section>
+          <section>
+            <details>
+              <summary>Note on the video</summary>
+              The video is of a door, not a meeting.
+            </details>
+          </section>
+    </main>
+    <footer>
+
+      <form action="" method="get">
+        <fieldset>
+          <legend>What is your interest level?</legend>
+      
+          <input type="radio" id="none" name="interest" value="s">
+          <label for="none">none</label><br>
+      
+          <input type="radio" id="some" name="interest" value="m">
+          <label for="some">some</label><br>
+      
+          <input type="radio" id="large" name="interest" value="l" />
+          <label for="large">large</label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>What are you interested in</legend>
+          <input type="checkbox" id="first" name="first" >
+          <label for="first">the first thing</label>
+          <input type="checkbox" id="second" name="second" >
+          <label for="second">the second thing</label>
+        </fieldset>
+        <br>
+
+        <label for="date">Date:</label>
+          <input type="date" id="date" name="date" size="10">
+          <br>
+        <label for="name">Name:</label>
+          <input type="text" id="name" name="name" size="10">
+        <br>
+          <label for="input">Give feedback:</label>
+            <br>
+            <textarea id="input" name="input" rows="6" cols="30">Give feedback here</textarea>
+          <br>
+
+          <label for="class">what class are you in</label>
+          <input list="classes" id="class" name="class">
+          <datalist id="classes">
+            <option value="freshman"></option>
+            <option value="sophomore"></option>
+            <option value="junior"></option>
+            <option value="senior"></option>
+            <option value="other"></option>
+          </datalist>
+          <br>
+
+
+          <label for="pet-select">Choose a pet:</label>
+
+          <select name="sport" id="sport-select">
+            <option value="">--choose an option--</option>
+            <option value="football">Football</option>
+            <option value="Baseball">Baseball</option>
+            <option value="Soccer">Soccer</option>
+            <option value="Hockey">Hockey</option>
+          </select>
+          <br>
+          <button type="button">
+            Submit form
+          </button>
+      </form>
+    </footer>
+
+  </body>
+</html>
