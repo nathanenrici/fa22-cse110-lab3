@@ -1,0 +1,90 @@
+/*my first style sheet*/
+/*adding header style*/
+
+.header{
+    border-bottom: 1px dashed;
+    border-bottom-right-radius: 1em 10%;
+    margin-top: 5vh;
+    margin-bottom: 5mm;
+    padding: 0 1cm 0 1cm;
+}
+a[href="#video"]{
+    text-decoration: none;
+    color:#000;
+    text-align:left;
+}
+a:hover{
+    color: #FFF;
+}
+a:active{
+    color: red;
+}
+/*style for attendance*/
+#attendance{
+    position:static;
+    border-style: groove;
+    border-color: #FFF;
+    border-width: 1lh;
+
+    margin: 10px 0 10px 0;
+    padding-right: 10vw;
+    padding-bottom: 1vh;
+}
+h3,h4 {
+    position: relative;
+    left: 15vw;
+    display: block;
+}
+img {
+    height:270px;
+    width: 401px;
+    max-width:40vw;
+    max-height:27vw;
+    margin-left:2vw;
+    margin-right:2vw;
+    display:inline;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.item {
+    flex-grow: .2;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: [row1-start] 25% [row1-end] [row2-start] 25% [row2-end] [row3-start] 25% [row3-end];
+    justify-items: center;
+    justify-content: space-around;
+}
+@media (min-width: 1000px) {
+    #video {
+      position:relative;
+      left: 15vw;
+    }
+  }
+#video {
+    padding-bottom: 5px;
+    width: 450px;
+}
+
+div p {
+    background-color: #fff;
+}
+section > p {
+    color: rgb(50,50,50);
+}
+p + p {
+    text-decoration:line-through;
+}
+div ~ section {
+    padding: 10px 10px 10px 10px;
+}
+p.bigger{
+    font-size:larger;
+}
