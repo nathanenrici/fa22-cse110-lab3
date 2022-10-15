@@ -3,33 +3,52 @@
   <head>
     <title>First Meeting Notes</title>
     <link rel="icon" href="media/icon.jpg">
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Alkalami">
+    <style>
+      *{
+        background-color: rgba(53, 53, 73, 1);
+      }
+    </style>
   </head>
   <body>
+    <div class="header">
     <header>
-        <h1>The First Meeting</h1>
+        <h1 style="color:blueviolet;font-family:Alkalami">The First Meeting</h1>
         <p>Introductions</p>
         <p>10/5/22</p>
     </header>
+  </div>
     <nav>
         <a href="#video">To just watch the meeting</a>
     </nav>
     <main>
+      <div id="attendance">
       <section>
         <h2>Attendance</h2>
         <ul>
+          <div class="container">
+            <div class="item">
             <li><span>Nathan</span></li> 
+            </div>
             <li>Thomas</li>
             <li>Alan</li>
             <li>Nate</li>
             <li>Tom</li>
+          </div>
         </ul>
       </section>
+      </div>
 
       <section>
         <h3>Agenda</h3>
         <p>This meeting is being held to <b>simply</b> <strong>introduce</strong> the <em>group</em> <i>members</i> and cover expectations for the project. 
           <br>We hope to get off on the right foot.</p>
+          <p>this is here to test the sibling combinator</p>
+          <p class="bigger">This text should be bigger</p>
+          <p>Than this text</p>
         <h3>Unfinished Business</h3>
         <ol>
             <li>N/A</li>
@@ -39,13 +58,15 @@
       <section>
         <h3>New Business</h3>
         <ol>
+          <div class="grid">
             <li>Breaking the ice</li>
             <li>Learning project specifications</li>
             <li>Brainstorming</li>
+            </div>
         </ol>
       </section>
       <section>
-        <h3>Data covered in this meeting</h3>
+        <h4>Data covered in this meeting</h4>
         <img src="media/Vdiagram.png" alt="Venn Diagram">
         <img src="media/norm.PNG" alt="pie charts">
       </section>
@@ -53,7 +74,7 @@
         <hr>
 
         <div id="video">
-          <video controls autoplay muted loop playsinline width="250">
+          <video controls autoplay muted loop playsinline>
             <source src="VIDEO.mp4" type="video/mp4">
           </video>
           </div>
